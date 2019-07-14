@@ -63,7 +63,10 @@ img{
 }
 
 /* header */
-
+.site-header{
+    background-color: #333333;
+    padding: 1rem 0 3rem 0;
+}
 .site-header.inicio {
     background-image: url(../img/fondo.jpeg);
     height: 80vh;
@@ -100,7 +103,7 @@ b{
 .contenido-header h1{
     color: white;
     padding-bottom: 2rem;
-    max-width: 50rem;
+    max-width: 60rem;
     line-height: 1.5;
 }
 
@@ -213,10 +216,10 @@ b{
     justify-content: space-between;
 }
 .seccion-inferior .blog{
-    flex-basis: 60%;
+    flex-basis: 70%;
 }
 .seccion-inferior .testimoniales{
-    flex-basis: calc(40% -2rem);
+    flex-basis: calc(30% - 4rem);
 
 }
 .entrada-blog{
@@ -231,7 +234,8 @@ b{
     flex-basis: 40%;
 }
 .entrada-blog .texto-entrada{
-    flex-basis: calc(60% - 3rem) ;
+    flex-basis: calc(60% - 4rem) ;
+   
 }
 .texto-entrada a{
     text-decoration: none;
@@ -266,14 +270,44 @@ span{
 .testimonial blockquote::before{
     content: '';
     background-image: url(../img/comillas.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
     width: 4rem;
-    height: 4rem;
+    height: 3rem;
     position: absolute;
+    top: 3rem;
+    left: -2rem;
 }
 .testimonial blockquote{
     position: relative;
+    padding-left: 5rem;
+    padding-left: 4rem;
+    padding-top: 3rem;
+    
 }
 .testimonial p{
+    
     text-align: right;
     margin-right: 3rem;
+    padding-bottom: 3rem;
+    
 }
+/* Footer */
+.contenedor-footer{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+.site-footer{
+    background-color: #333333;
+    margin: 0;
+}
+.copyrigth{
+    margin: 0;
+    color: white;
+}
+
+
+/* Codigo de paginas internas */
