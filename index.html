@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BienesRaices</title>
+    <!-- funtes de google -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet"> 
+    <!-- normalizar estilos para varios dispocitivos -->
+    <link rel="stylesheet" href="css/normalize.css"> 
+    <!-- mi hoja de estilos -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
         <header class="site-header inicio">
-                <div class="contenedor">
+                <div class="contenedor contenido-header">
                         <div class="barra">
                                         <a class="logo"  href="/">
                                                  Bienes<b>Raices</b>
@@ -24,54 +30,69 @@
                         <h1>Ventas de Casas y Departamentos Exclusivos de Lujo</h1>
                 </div><!--contenedor-->
         </header>
-        <section>
+        <section class="contenedor seccion">
             <h2>Más sobre nosotros</h2>
-            <div>
-                    <img src="img/seguridad.png" alt="Icono Seguridad">
-                    <h3>Seguridad</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim nemo culpa in nesciunt molestias! Recusandae, laudantium! Officiis rerum hic, nemo deleniti, fuga, ipsa voluptas esse modi dolore ex minus ea?</p>        
-            </div>
-            <div>
-                    <img src="img/Banknotes_96px.png" alt="Icono Mejor Precio">
-                    <h3>El mejor precio</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim nemo culpa in nesciunt molestias! Recusandae, laudantium! Officiis rerum hic, nemo deleniti, fuga, ipsa voluptas esse modi dolore ex minus ea?</p>
-        
-            </div>
-            <div>
-                    <img src="img/time.png" alt="Icono A Tiempo">
-                    <h3>A Tiempo</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim nemo culpa in nesciunt molestias! Recusandae, laudantium! Officiis rerum hic, nemo deleniti, fuga, ipsa voluptas esse modi dolore ex minus ea?</p>
-            </div>
-        </section>
+            <div class="iconos-nosotros">
+                <div class="icono">
+                        <img src="img/seguridad.png" alt="Icono Seguridad">
+                        <h3>Seguridad</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim nemo culpa in nesciunt molestias! Recusandae, laudantium! Officiis rerum hic, nemo deleniti, fuga, ipsa voluptas esse modi dolore ex minus ea?</p>        
+                </div><!--icono-->
+                <div class="icono">
+                        <img src="img/Banknotes_96px.png" alt="Icono Mejor Precio">
+                        <h3>El mejor precio</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim nemo culpa in nesciunt molestias! Recusandae, laudantium! Officiis rerum hic, nemo deleniti, fuga, ipsa voluptas esse modi dolore ex minus ea?</p>
+                
+                </div><!--icono-->
+                <div class="icono">
+                        <img src="img/time.png" alt="Icono A Tiempo">
+                        <h3>A Tiempo</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim nemo culpa in nesciunt molestias! Recusandae, laudantium! Officiis rerum hic, nemo deleniti, fuga, ipsa voluptas esse modi dolore ex minus ea?</p>
+                </div><!--icono-->
+            </div><!--iconos-nosotros-->
+        </section><!--contenedor seccion-->
 
-        <main>
-            <h2>Casas y Depas en Venta</h2>
-            <div>
-                    <img src="img/casa1.jpg" alt="Casa de Lujo en el  Lago">
-                    <h3>Casa de Lujo en el  Lago</h3>
-                    <p>Casa en el lago con exelente vista, acabado de lujo con excelente precio</p>
-                    <p>$100,000.00</p>
-                    <a href="#">VER PROPIEDAD</a>
-            </div>   
-        
-            <div>
-                    <img src="img/casa2.jpg" alt="Casa Terminados de Lujo">
-                    <h3>Casa Terminados de Lujo</h3>
-                    <p>Casa en el lago con exelente vista, acabado de lujo con excelente precio</p>
-                    <p>$200,000.00</p>
-                    <a href="#">VER PROPIEDAD</a>
-            </div>
-        
-            <div>
-                    <img src="img/casa3.jpg" alt="Casa Con Alberca">        
-                    <h3>Casa Con Alberca</h3>
-                    <p>Exelente ubicasión</p>
-                    <p>$500,000.00</p>
-                    <a href="#">VER PROPIEDAD</a>
-                    <a href="#">VER TODAS</a>
-            </div>
+        <main class="seccion contenedor">
+            <h2 class="centrar-texto fw-300">Casas y Depas en Venta</h2>
+            <div class="contenedor-anuncios">
+                <div class="anuncio">
+                        <img src="img/casa1.jpg" alt="Casa de Lujo en el  Lago">
+                        
+                        <div class="contenedor-anuncio">
+                                <h3>Casa de Lujo en el  Lago</h3>
+                                <p>Casa en el lago con exelente vista, acabado de lujo con excelente precio</p>
+                                <p>$100,000.00</p>
+                                <a href="#">VER PROPIEDAD</a>
+                        </div>
 
-        </main>
+                </div>   
+                
+                <div class="anuncio">
+                        <img src="img/casa2.jpg" alt="Casa Terminados de Lujo">
+                        
+                        <div class="contenedor-anuncio">
+                                <h3>Casa Terminados de Lujo</h3>
+                                <p>Casa en el lago con exelente vista, acabado de lujo con excelente precio</p>
+                                <p>$200,000.00</p>
+                                <a href="#">VER PROPIEDAD</a>
+                        </div>
+                </div>
+                
+                <div class="anuncio">
+                        <img src="img/casa3.jpg" alt="Casa Con Alberca">        
+                       
+                        <div class="contenedor-anuncio">
+                                <h3>Casa Con Alberca</h3>
+                                <p>Exelente ubicasión</p>
+                                <p>$500,000.00</p>
+                                <a href="#">VER PROPIEDAD</a>
+                               
+                        </div>
+                </div>
+                
+            </div><!--contenedor-anuncios-->
+            <a href="#">VER TODAS</a>
+        </main><!--seccion contenedor-->
 
         <section>
                 <h2>Encuentra la casa de tus sueños</h2>

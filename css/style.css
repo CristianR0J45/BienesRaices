@@ -1,23 +1,56 @@
+html{
+    font-size: 62.5%; /* Reset para REMS -62.5%=10px; de 16px*/
+}
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+}
 /* Global */
 .contenedor{
-    max-width: 1200px;
+    max-width: 120rem;
     margin: 0 auto 0 auto;
+}
+.h1{
+    font-size: 3.8rem;
+}
+.h2{
+    font-size: 3.4rem;
+}
+.h3{
+    font-size: 3rem;
+}
+.h4{
+    font-size: 2.6rem;
+}
+img{
+    max-width: 100%;
+}
+/* Ulitilidades */
+.seccion{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.fw-300{
+    font-weight: 300;
+}
+.centrar-texto{
+    text-align: center;
 }
 /* header */
 
 .site-header.inicio {
     background-image: url(../img/fondo.jpeg);
     height: 80vh;
-    min-height: 400px;
+    min-height: 40rem;
     background-position: center center;
     background-size: cover;
 }
 
 .logo{
-    font-size: 50px;
+    font-size: 5rem;
     text-decoration: none;
-    color: lightgray;
-    font-family:  Helvetica, sans-serif;
+    color: white;
+    font-family: 'Lato', sans-serif;
     text-transform: uppercase;
     font-weight: lighter;
 }
@@ -25,19 +58,65 @@ b{
     color: white;
     font-weight: bold;
 }
+.contenido-header{
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* toma el contenido total del padre*/
+    justify-content: space-between; /*alinea al final del contenedor*/
+
+}
 .barra{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-top: 30px;
+}
+.contenido-header h1{
+    color: white;
+    padding-bottom: 2rem;
+    max-width: 50rem;
+    line-height: 1.5;
 }
 
 /* Navegacion */
 .navegacion a{
     text-decoration: none;
     color: white;
-    margin-right: 20px;
-    font-size: 18px;
+    margin-right: 2rem;
+    font-size: 1.8rem;
+   
+}
+.navegacion a:hover{
+    color: #71B100;
+
 }
 .navegacion a:last-of-type{
     margin: 0;
+}
+
+/* mas sobre nosotros */
+.contenedor.seccion h2{
+    text-align: center;
+    font-weight: 300;
+}
+/* iconos nosotros */
+.iconos-nosotros{
+    display: flex;
+    justify-content: space-between;
+
+}
+.icono{
+    flex-basis: calc(33.3% - 1rem);
+    text-align: center;
+}
+.icono h3{
+    text-transform: uppercase;
+}
+/* Anuncios */
+.contenedor-anuncios{
+    display: flex;
+    justify-content: space-between;
+}
+.anuncio{
+    flex-basis: calc(33.3% - 1rem);
 }
