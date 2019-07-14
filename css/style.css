@@ -1,0 +1,43 @@
+/* Global */
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto 0 auto;
+}
+/* header */
+
+.site-header.inicio {
+    background-image: url(../img/fondo.jpeg);
+    height: 80vh;
+    min-height: 400px;
+    background-position: center center;
+    background-size: cover;
+}
+
+.logo{
+    font-size: 50px;
+    text-decoration: none;
+    color: lightgray;
+    font-family:  Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+b{
+    color: white;
+    font-weight: bold;
+}
+.barra{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+/* Navegacion */
+.navegacion a{
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    font-size: 18px;
+}
+.navegacion a:last-of-type{
+    margin: 0;
+}
