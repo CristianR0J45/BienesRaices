@@ -11,6 +11,7 @@ body{
 
 /* Global */
 .contenedor{
+    width: 95%;
     max-width: 120rem;
     margin: 0 auto 0 auto;
 }
@@ -64,6 +65,14 @@ img{
     text-align: center;
     border: none;
     cursor: pointer;
+    display: block;
+    flex: 0 0 100%;
+}
+@media (min-width: 768px) {
+    .boton{
+        display: inline-block;
+        flex: 0 0 auto;
+    }
 }
 .boton-amarillo{
     background-color: #E08709;
@@ -87,12 +96,18 @@ img{
 }
 
 .logo{
-    font-size: 5rem;
+    font-size: 4rem;
     text-decoration: none;
     color: white;
     font-family: 'Lato', sans-serif;
     text-transform: uppercase;
     font-weight: lighter;
+}
+@media (min-width: 768px) {
+    .logo{
+        font-size: 5rem;
+      
+    }
 }
 b{
     color: white;
@@ -103,29 +118,46 @@ b{
     flex-direction: column;
     height: 100%; /* toma el contenido total del padre*/
     justify-content: space-between; /*alinea al final del contenedor*/
+    text-align: center;
 
 }
+@media (min-width: 768px) {
+    .contenido-header{
+        text-align: left;
+    }
+}
 .barra{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 30px;
+    padding-top: 3rem;
+}
+@media (min-width: 768px) {
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 30px;
+    }
 }
 .contenido-header h1{
     color: white;
     padding-bottom: 2rem;
     max-width: 60rem;
     line-height: 1.5;
+    font-size: 2rem !important;
 }
-
+@media (min-width: 768px) {
+    .contenido-header h1{
+        font-size: 3.8rem !important;
+    }
+}
 /* Navegacion */
 .navegacion a{
     text-decoration: none;
     color: white;
-    margin-right: 2rem;
     font-size: 1.8rem;
-   
+    display: block;
+    padding-bottom: .5rem;
 }
+
 .navegacion a:hover{
     color: #71B100;
 
@@ -133,6 +165,32 @@ b{
 .navegacion a:last-of-type{
     margin: 0;
 }
+@media (min-width: 768px) {
+    .navegacion a{
+        display: inline;
+        margin-right: 2rem;
+    }
+    .navegacion a:last-of-type{
+        margin: 0;
+    }
+}
+/* mobile-menu */
+.mobile-menu img{
+    width: 5rem;
+}
+@media (min-width: 768px) {
+    .mobile-menu{
+        display: none;
+    }
+}
+.navegacion:target{
+    display: block;
+}
+.navegacion{
+    display: none;
+}
+
+
 
 /* mas sobre nosotros */
 .contenedor.seccion h2{
@@ -140,31 +198,51 @@ b{
     font-weight: 300;
 }
 /* iconos nosotros */
-.iconos-nosotros{
-    display: flex;
-    justify-content: space-between;
-
+@media (min-width: 768px) {
+    .iconos-nosotros{
+        display: flex;
+        justify-content: space-between;
+    
+    }   
+    
 }
+
 .icono{
     flex-basis: calc(33.3% - 1rem);
     text-align: center;
+}
+@media (min-width: 768px) {
+    .icono{
+        flex-basis: calc(33.3% - 1rem);
+        text-align: center;
+    }
 }
 .icono h3{
     text-transform: uppercase;
 }
 /* Anuncios */
-.contenedor-anuncios{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+@media (min-width: 768px) {
+    .contenedor-anuncios{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }   
 }
+
 .anuncio{
-    flex-shrink: 0;
-    flex-basis: calc(33.3% - 1rem);
+
+    
     border: 1px solid #B5B5B5;
     background-color: #f5f5f5;
     margin-bottom: 2rem;
   
+}
+@media (min-width: 768px) {
+    .anuncio{
+        flex-shrink: 0;
+        flex-basis: calc(33.3% - 1rem);
+      
+    }
 }
 .contenedor-anuncios .anuncio .imgHome{
 
@@ -208,8 +286,13 @@ b{
     color: #B5B5B5;
 }
 .ver-todas{
-    display: flex;
-    justify-content: right;
+   display: block;
+}
+@media (min-width: 768px) {
+    .ver-todas{
+        display: flex;
+        justify-content: right;
+    } 
 }
 /* contacto home */
 .imagen-contacto{
@@ -221,33 +304,56 @@ b{
     align-items: center;
 }
 .contenido-contacto{
-    flex: 1;
+    flex: 0 0 95%;  
+   
     color: white;
 
+}
+.contenido-contacto h2,.contenido-contacto p{
+    text-shadow: 2px 2px 2px black;
+}
+@media (min-width: 768px) {
+    .contenido-contacto{
+        flex: 1;
+    } 
+    .contenido-contacto h2,.contenido-contacto p{
+        text-shadow: none;
+    }
 }
 .contenido-contacto p{
     font-size: 1.8rem;
 }
-/* seccion inferior */
-.seccion-inferior{
-    display: flex;
-    justify-content: space-between;
-}
-.seccion-inferior .blog{
-    flex-basis: 70%;
-}
-.seccion-inferior .testimoniales{
-    flex-basis: calc(30% - 4rem);
 
+/* seccion inferior */
+@media (min-width: 768px) {
+    .seccion-inferior{
+        display: flex;
+        justify-content: space-between;
+    }
+    .seccion-inferior .blog{
+        flex-basis: 70%;
+    }
+    .seccion-inferior .testimoniales{
+        flex-basis: calc(30% - 4rem);
+    
+    } 
 }
+
 .entrada-blog{
-    display: flex;
-    justify-content: space-between;
+ 
     margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+    .entrada-blog{
+        display: flex;
+        justify-content: space-between;
+       
+    }
 }
 .entrada-blog :last-of-type{
     margin-bottom: 0;
 }
+
 .entrada-blog .imagen{
     flex-basis: 40%;
 }
@@ -255,6 +361,7 @@ b{
     flex-basis: calc(60% - 4rem) ;
    
 }
+
 .texto-entrada a{
     text-decoration: none;
     color: black;
@@ -315,6 +422,9 @@ span{
 /* Footer */
 .contenedor-footer{
     padding: 3rem 0;
+   text-align: center;
+}
+@media (min-width: 768px) {
     display: flex;
     justify-content: space-between;
 }
@@ -323,18 +433,23 @@ span{
     margin: 0;
 }
 .copyrigth{
+    padding-top: 2rem;
     margin: 0;
     color: white;
 }
 
 
+
 /* Codigo de paginas internas */
 /* nosotros */
-.contenedor-nosotros{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-column-gap: 2rem;
 
+@media (min-width: 768px) {
+    .contenedor-nosotros{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 2rem;
+    
+    }  
 }
 .texto-nosotros blockquote{
     font-weight: 900;
@@ -377,11 +492,22 @@ select{
     padding: 1rem;
     display: block;
     background-color: lightgray;
-    width: 97%;
+    width: 93%;
     margin-bottom: 2rem;
     border: none;
     border-radius: .5rem;
 
+}
+@media (min-width: 768px) {
+    input:not([type="submit"]), 
+    textarea,
+    select{
+    width: 97%;
+    
+    
+    
+
+}
 }
 select{
     -webkit-appearance: none;
@@ -406,4 +532,7 @@ textarea{
     max-width: 30rem;
     display: flex;
     justify-content: space-between;
+}
+.contenedor.contenedor-footer .navegacion{
+    display: none;
 }
